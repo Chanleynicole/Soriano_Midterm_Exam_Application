@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="BooksApp">
+<head>
+<title>Gadgets</title>
+<style>
+body {
+background-color: #f0f0f0;
+font-family: Arial, sans-serif;
+}
+.gadget-container {
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+<body>
+<div class="BooksApp" ng-controller="ProductController as prodCtrl">
+<h1>Gadgets</h1>
+<p>Product name: {{ prodCtrl.product.name }}</p>
+<p>Product description: {{ prodCtrl.product.description }}</p>
+</div>
+
+<script src="https://code.angularjs.org/1.7.8/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
